@@ -1,0 +1,97 @@
+html, body{
+    --color-1: #abc6cf;
+    --color-2: #dcedc1;
+    --color-3: #ffd3b6;
+    --color-4: #fb9b96;
+    --color-5: #ff8b94;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* BM :-
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    font-family: sans-serif;
+    padding-top: 50px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+}
+
+.container {
+    /* BM :-
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 400px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0 auto;           /* See what happens with margin: 0 auto; ? */
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+    padding: 50px;
+}
+
+/* BM :-
+.players {
+    padding: 50px 0;
+    display: flex;
+    gap: 100px;
+}*/
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */  /* Border is included just to check other styles and how its working. */
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;    /* see what margin: 0 auto; is doing here ? */
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BM :-
+.button {
+    margin: 10px;
+} */
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: var(--color-4);
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+    display: none;
+}
+
+button:focus {
+    outline: none;  /* why outline none into button:focus ? */
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
